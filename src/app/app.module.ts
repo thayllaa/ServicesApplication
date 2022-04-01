@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { TimerService } from './timer.service';
 
 @NgModule({
   imports:      [ 
@@ -20,6 +21,9 @@ import { RouterModule } from '@angular/router';
     HelloComponent,
     HomeComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [
+    TimerService
+  ]
 })
 export class AppModule { }
