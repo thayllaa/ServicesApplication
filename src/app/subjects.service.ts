@@ -6,7 +6,9 @@ interface Subject {
 
 @Injectable()
 export class SubjectsService {
-  list: Array<Subject> = [];
+  list: Array<Subject> = [
+      {title: 'Tópicos Especiais II', day: 'Friday', hour: '7pm-10:30pm'},
+  ];
 
   constructor() {}
 
