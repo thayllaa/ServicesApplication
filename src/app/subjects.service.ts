@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
-interface Subjects {
+interface Subject {
   title: String;
 }
 
 @Injectable()
 export class SubjectsService {
-  list: Array<Subjects> = [
+  list: Array<Subject> = [
     {title: 'Banco de Dados II'},
     {title: 'Desenvolvimento para Servidores I'},
     {title: 'Desenvolvimento para Servidores II'},
