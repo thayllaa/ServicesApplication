@@ -10,4 +10,15 @@ export class SubjectsService {
 
   constructor() {}
 
+  getList() {
+    return this.list
+  }
+
+  add(title: string) {
+    this.list.push({title});
+  }
+
+  remove(index: number) {
+    this.list.slice(index, 1);
+  }
 }
