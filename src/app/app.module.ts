@@ -17,7 +17,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FormsModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'subjects', component: SubjectsComponent},
+      {path: 'subjects-list', component: SubjectsComponent},
       {path: 'about-me', component: AboutMeComponent}
     ])
   ],
