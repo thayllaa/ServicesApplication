@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 
 interface Subjects {
-  title: String; 
-  day: String; 
-  hour: String;
+  title, day, hour: String;
 }
 
 @Injectable()
