@@ -9,7 +9,7 @@
 
 <h2>List of Subjects</h2>
 <ul>
-  <li *ngFor="let subject of subject.getList(); index as i">
+  <li *ngFor="let subject of subjects.getList(); index as i">
     {{ subject.title }}
     <button (click)="subjects.remove(i)">Delete</button>
   </li>
