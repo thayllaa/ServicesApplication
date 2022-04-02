@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
-interface Subjects {
+interface Subject {
   title: String;
 }
 
 @Injectable()
 export class SubjectsService {
-  list: Array<Subjects> = [];
+  list: Array<Subject> = [];
 
   constructor() {}
 
