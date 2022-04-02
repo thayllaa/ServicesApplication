@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
 
 interface Subjects {
-  title, day, hour: String;
+  title: String;
 }
 
 @Injectable()
 export class SubjectsService {
   list: Array<Subjects> = [
-    {title: 'Banco de Dados II', day: 'Wednesday', hour: '9:30am-1pm'},
-    {title: 'Desenvolvimento para Servidores I', day: 'Monday', hour: '9:30am-1pm'},
-    {title: 'Desenvolvimento para Servidores II', day: 'Thursday', hour: '7pm-10:30pm'},
-    {title: 'Desenvolvimento para Dispositivos Movéis I', day: 'Monday', hour: '7pm-10:30pm'},
-    {title: 'Negócios, Marketing e Eletrônicos', day: 'Wednesday', hour: '7pm-10:30pm'},
-    {title: 'Tópicos Especiais II', day: 'Friday', hour: '7pm-10:30pm'},
-    {title: 'Prototipagem e Testes', day: 'Saturday', hour: '8am-11:30am'},
-    {title: 'Programa de Graduação', day: 'Saturday', hour: '11:30am-1pm'},
+    {title: 'Banco de Dados II'},
+    {title: 'Desenvolvimento para Servidores I'},
+    {title: 'Desenvolvimento para Servidores II'},
+    {title: 'Desenvolvimento para Dispositivos Movéis I'},
+    {title: 'Negócios, Marketing e Eletrônicos'},
+    {title: 'Tópicos Especiais II'},
+    {title: 'Prototipagem e Testes'},
+    {title: 'Programa de Graduação'},
   ];
 
   constructor() {}
@@ -24,7 +24,7 @@ export class SubjectsService {
   }
 
   add(title, day, hour: string) {
-    this.list.push({title, day, hour});
+    this.list.push({title});
   }
 
   remove(index: number) {
