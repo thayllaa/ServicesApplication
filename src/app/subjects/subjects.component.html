@@ -1,1 +1,7 @@
 <h2> My Subjects </h2>
+<div>
+  <input #input type="text">
+  <button (click)="subjects.add(input.value); input.value='';">
+    Add Subject
+  </button>
+</div>
