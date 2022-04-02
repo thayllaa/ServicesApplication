@@ -1,13 +1,20 @@
 import { Injectable } from '@angular/core';
 
 interface Subject {
-  title: String;
+  title, day, hour: String;
 }
 
 @Injectable()
 export class SubjectsService {
   list: Array<Subject> = [
-      {title: 'Tópicos Especiais II', day: 'Friday', hour: '7pm-10:30pm'},
+    {title: 'Banco de Dados II', day: 'Wednesday', hour: '9:30am-1pm'},
+    {title: 'Desenvolvimento para Servidores I', day: 'Monday', hour: '9:30am-1pm'},
+    {title: 'Desenvolvimento para Servidores II', day: 'Thursday', hour: '7pm-10:30pm'},
+    {title: 'Desenvolvimento para Dispositivos Movéis I', day: 'Monday', hour: '7pm-10:30pm'},
+    {title: 'Negócios, Marketing e Eletrônicos', day: 'Wednesday', hour: '7pm-10:30pm'},
+    {title: 'Tópicos Especiais II', day: 'Friday', hour: '7pm-10:30pm'},
+    {title: 'Prototipagem e Testes', day: 'Saturday', hour: '8am-11:30am'},
+    {title: 'Programa de Graduação', day: 'Saturday', hour: '11:30am-1pm'},
   ];
 
   constructor() {}
@@ -16,8 +23,8 @@ export class SubjectsService {
     return this.list
   }
 
-  add(title: string) {
-    this.list.push({title});
+  add(title, day, hour: string) {
+    this.list.push({title, day, hour});
   }
 
   remove(index: number) {
