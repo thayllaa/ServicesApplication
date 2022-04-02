@@ -19,6 +19,6 @@ export class SubjectsService {
   }
 
   remove(index: number) {
-    this.list.slice(index, 1);
+    this.list.splice(index, 1);
   }
 }
