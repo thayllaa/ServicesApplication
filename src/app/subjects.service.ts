@@ -6,9 +6,7 @@ interface Subject {
 
 @Injectable()
 export class SubjectsService {
-  list: Array<Subject> = [
-    {},
-  ];
+  list: Array<Subject> = [];
 
   constructor() {}
 
