@@ -7,19 +7,22 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { TimerService } from './timer.service';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 @NgModule({
   imports:      [ 
     BrowserModule, 
     FormsModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent}
+      {path: '', component: HomeComponent},
+      {path: 'subjects', component: SubjectsComponent}
     ])
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent,
-    HomeComponent
+    HomeComponent,
+    SubjectsComponent
   ],
   bootstrap:    [ AppComponent ],
   providers: [
