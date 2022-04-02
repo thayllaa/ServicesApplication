@@ -20,7 +20,7 @@ export class SubjectsService {
   constructor() {}
 
   getList() {
-    return this.list
+    return this.list;
   }
 
   add(title, day, hour: string) {
