@@ -23,7 +23,7 @@ export class SubjectsService {
     return this.list;
   }
 
-  add(title, day, hour: string) {
+  add(title: string) {
     this.list.push({title});
   }
 
