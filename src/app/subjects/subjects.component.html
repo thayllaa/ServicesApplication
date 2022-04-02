@@ -1,6 +1,6 @@
 <h2> Subjects </h2>
 <p>
-  
+
 </p>
 <div>
   <input #input type="text">
@@ -13,6 +13,8 @@
 <ul>
   <li *ngFor="let subject of subjects.getList(), index as i">
     {{ subject.title }}
+    {{ subject.day }}
+    {{ subject.hour }}
     <button (click)="subjects.remove(i)"> Delete </button>
   </li>
 </ul>
