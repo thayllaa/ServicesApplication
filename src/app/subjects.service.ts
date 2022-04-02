@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface Subject {
+interface Subjects {
   title: String; 
   day: String; 
   hour: String;
@@ -8,7 +8,7 @@ interface Subject {
 
 @Injectable()
 export class SubjectsService {
-  list: Array<Subject> = [
+  list: Array<Subjects> = [
     {title: 'Banco de Dados II', day: 'Wednesday', hour: '9:30am-1pm'},
     {title: 'Desenvolvimento para Servidores I', day: 'Monday', hour: '9:30am-1pm'},
     {title: 'Desenvolvimento para Servidores II', day: 'Thursday', hour: '7pm-10:30pm'},
