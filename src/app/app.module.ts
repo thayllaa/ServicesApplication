@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { TimerService } from './timer.service';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { SubjectsService } from './subjects.service';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   imports:      [ 
@@ -16,13 +17,15 @@ import { SubjectsService } from './subjects.service';
     FormsModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'subjects', component: SubjectsComponent}
+      {path: 'subjects', component: SubjectsComponent},
+      {path: 'about-me', component: AboutMeComponent}
     ])
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent,
     HomeComponent,
+    AboutMeComponent,
     SubjectsComponent
   ],
   bootstrap:    [ AppComponent ],
