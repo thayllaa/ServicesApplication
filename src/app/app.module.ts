@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { TimerService } from './timer.service';
 import { SubjectsComponent } from './subjects/subjects.component';
+import { SubjectsService } from './subjects.service';
 
 @NgModule({
   imports:      [ 
@@ -26,7 +27,8 @@ import { SubjectsComponent } from './subjects/subjects.component';
   ],
   bootstrap:    [ AppComponent ],
   providers: [
-    TimerService
+    TimerService,
+    SubjectsService
   ]
 })
 export class AppModule { }
